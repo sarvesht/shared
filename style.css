@@ -1,0 +1,83 @@
+body {
+  background-color: lightgray; }
+
+@font-face {
+  font-family: Cantarell;
+  src: url("fonts/Cantarell-Regular.ttf"); }
+
+@font-face {
+  font-family: ExoThin;
+  src: url("fonts/Exo-Thin.otf"); }
+
+@font-face {
+  font-family: Hero;
+  src: url("fonts/Hero.otf"); }
+
+.postForm {
+  background-color: white;
+  vertical-align: top;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto; }
+  .postForm div {
+    border: black;
+    border-style: inset;
+    box-shadow: 2px 2px 2px gray;
+    border-width: thin;
+    padding: 10px; }
+    .postForm div td {
+      vertical-align: top; }
+    .postForm div textarea {
+      resize: vertical; }
+
+.postViewer {
+  list-style: none;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto; }
+  .postViewer li {
+    background-color: white;
+    margin-top: 10px;
+    margin-bottom: 10px; }
+    .postViewer li div {
+      border: black;
+      border-style: inset;
+      box-shadow: 2px 2px 2px gray;
+      border-width: thin;
+      padding: 15px 15px 15px 20px; }
+      .postViewer li div header {
+        font-style: italic;
+        line-height: 30px; }
+      .postViewer li div section {
+        font-family: ExoThin;
+        font-size: large;
+        line-height: 40px; }
+      .postViewer li div footer {
+        font-size: 11px;
+        line-height: 20px; }
+
+.authenticator {
+  vertical-align: top;
+  background-color: white;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10px;
+  border: black;
+  border-style: inset;
+  box-shadow: 2px 2px 2px gray;
+  border-width: thin; }
+  .authenticator .container {
+    margin: 5px;
+    padding: 10px; }
+
+/*@media screen and (max-width:800px){
+  body{
+    background-color: red;
+  }
+
+  .postForm {
+    background-color: pink;
+    vertical-align: bottom;
+  }
+} */
