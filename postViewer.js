@@ -19,7 +19,7 @@
       this.firebase.on('child_added', function(snapshot) {
         var html, key;
         key = _this._removeSpecialCharacters(snapshot.val().key);
-        html = "<li class='" + key + "'><div><header><a href='" + (snapshot.val().url) + "' target='_blank'>" + (snapshot.val().url) + "</a></header><section>" + (snapshot.val().description) + "</section><footer>Posted by " + (snapshot.val().user);
+        html = "<li class='" + key + "'><div><img src='http://api.thumbalizr.com/?url="+ snapshot.val().url+"&width=250'</div><div><header><a href='" + (snapshot.val().url) + "' target='_blank'>" + (snapshot.val().url) + "</a></header><section>" + (snapshot.val().description) + "</section><footer>Posted by " + (snapshot.val().user);
         if (snapshot.val().user === $("#authentication").auth('GetCurrentUser')) {
           html = html + ("&nbsp;<span class='delete' data-key='" + (snapshot.val().key) + "'>(Delete)</span>");
         }
